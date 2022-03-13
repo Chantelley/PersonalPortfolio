@@ -1,0 +1,162 @@
+:root {
+    --main-white: #818274;
+    --main-blue: #506266;
+    --Teal-Dark-1-hex: #162427;
+--Teal-Dark-2-hex: #1D7373;
+--Teal-Dark-3-hex: #7acaca;
+--Teal-Dark-4-hex: #0A3A40;
+--Teal-Dark-5-hex: #84d7df;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--Teal-Dark-3-hex);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: cornsilk;
+    list-style-type: none;
+    gap: 60px;
+    
+}
+
+.navlist {
+    display: flex;
+    list-style-type: none;
+    padding: .12em;
+    
+    color: cornsilk;
+    
+}
+
+.navlist {
+    display: block;
+    color: var(--Teal-Dark-5-hex);
+    padding: 1rem;
+    font-size: xx-large;
+    
+}
+
+.navlist a:hover {
+    background: var(--main-blue);
+}
+
+a { 
+    text-decoration: none;
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: var(--Teal-Dark-1-hex);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Teal-Dark-5-hex)
+}
+
+h1 { 
+    font-size: 4.5rem;
+    padding: 3.5rem;
+    color: var(--Teal-Dark-5-hex);
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Teal-Dark-2-hex);
+    height: auto;
+}
+
+.project-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projet-tile img {
+    width: 20rem;
+
+}
+ figcaption {
+     font-size: x-large;
+      text-align: center;
+      background-color: var(--Teal-Dark-5-hex);
+      border-radius: 3px 3px 9px 9px;
+      color: rgb(90, 100, 100);
+ }
+
+ #contact {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: var(--Teal-Dark-4-hex);
+ }
+
+ #contact h1 {
+     color: var(--Teal-Dark-1-hex)
+    }
+
+.contact-links {
+
+     display: flex;
+
+ }
+
+ .contact-links a {
+     display: block;
+     font-size: xx-large;
+     padding: 3.5rem;
+
+ }
+
+ .contact-details {
+     color: var(--Teal-Dark-5-hex);
+     text-shadow:  2.5px 2.5px 1.5px #042326;
+     transition: transform 0.3s ease-out;
+
+ }
+
+ .contact-details:hover {
+     transform: translateY(8px);
+ }
+
+ /* Learn to comment here */
+
+ footer {
+     font-size: large;
+     text-align: center;
+     padding: 3.5rem;
+     background-color: var(--Teal-Dark-4-hex);
+     color: cadetblue;
+
+ }
+
+ /* 980 pz / 16px = 61.25em */
+ @media (max-width: 61.25em) {
+     html { 
+         font-size:  60%;
+     }
+     
+ }
+
+ /* 640px / 16px=40em */ 
+ @media (max-width: 40em) {
+     html {
+         font-size:  50%;
+         color: aquamarine;
+     }
+ }
